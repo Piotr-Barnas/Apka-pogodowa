@@ -1,0 +1,10 @@
+root{
+    box-sizing: content-box;
+}
+
+div{
+    border: solid red;
+    background: rgba(10, 10, 10, 0.5);
+    color: whitesmoke;
+    
+}
