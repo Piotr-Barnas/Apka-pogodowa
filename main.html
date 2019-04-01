@@ -9,11 +9,12 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    </head>
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Josefin+Sans:300" rel="stylesheet">
+
 <body>
     <div class="container-fluid">
         <video loop muted autoplay src='' class="fullscreen-bg__video" id="bg_src"></video>
-        <div class="row  el" id="navBar">
+        <div class="row  el" id="navBar justify-content-md-center">
             <div class="col-sm-9" id="szukaj">
                 <span>Wybierz Miasto: </span>
                 <input type="text" id="wyszukiwarka" onkeyup="filtrowanie()" placeholder="Miasto">
@@ -32,40 +33,34 @@
                 Gdzie jest cieplej ?
             </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-md-center">
             <div id="pogoda" class="col-sm-4 el" >
-                <div class="row">icon: "04d"</div>
-                <div class="row">Pogoda w tym momencie</div>
-                <div class="row">descr: "Clouds, overcast clouds"</div>
-                <div class="row">humidity: "67%"</div>
-                <div class="row">pressure: "1020.44hPa</div>
-                <div class="row">temperature: 12.82</div>
-                <div class="row">windSpeed: "2.27km/h"</div>
+                
+                <div class="row"><h3>W tym momencie:</h3></div>
+                <div class="row"><h3>icon:</h3> "04d"</div>
+                <div class="row"><h3>descr:</h3> "Clouds, overcast clouds"</div>
+                <div class="row"><h3>humidity:</h3> "67%"</div>
+                <div class="row"><h3>pressure:</h3> "1020.44hPa</div>
+                <div class="row"><h3>temperature:</h3>12.82</div>
+                <div class="row"><h3>windSpeed:</h3>"2.27km/h"</div>
             </div>
             <div id="prognoza" class="col-sm-4 offset-sm-2 el">
-                <div class="row">Prognoza na jutro</div>
-                <div class="row">icon: "04d"</div>
-                <div class="row">descr: "Clouds, overcast clouds"</div>
-                <div class="row">humidity: "67%"</div>
-                <div class="row">pressure: "1020.44hPa</div>
-                <div class="row">temperature: 12.82</div>
-                <div class="row">windSpeed: "2.27km/h"</div>
+                
+                <div class="row"><h3>Jutro:</h3> </div>
+                <div class="row"><h3>icon:</h3> "04d"</div>
+                <div class="row"><h3>descr:</h3> "Clouds, overcast clouds"</div>
+                <div class="row"><h3>humidity:</h3> "67%"</div>
+                <div class="row"><h3>pressure:</h3> "1020.44hPa</div>
+                <div class="row"><h3>temperature:</h3>12.82</div>
+                <div class="row"><h3>windSpeed:</h3>"2.27km/h"</div>
             </div>
         </div>
         <div id="bottomEl" class="row el">
             <div id="spotify" class="col-sm-12">
                 Piosenka na pogode 
             </div>
-        </div>
-        
-        
+        </div>       
     </div>
-    
-    
-    
-    
-    
-    
     
     <script src="main.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
