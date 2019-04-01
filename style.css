@@ -1,7 +1,6 @@
 :root{
     box-sizing: content-box;
     margin: 30px;
-    
 }
 
 body {
@@ -9,8 +8,6 @@ body {
     font-family: 'Josefin Sans',
     sans-serif;
 }
-
-
 
 .el {
     background: rgba(10, 10, 10, 0.7);
@@ -30,7 +27,6 @@ div h3{
 }
 #pogoda {
     height: 60vh;
-    
 }
 
 #prognoza {
