@@ -74,3 +74,5 @@ function filtrowanie() {
         }
     }
 }
+
+console.log('m')
