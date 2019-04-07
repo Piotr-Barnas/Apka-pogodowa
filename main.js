@@ -2,6 +2,7 @@ var i=Math.floor(Math.random() * 12);
 var weathersList = ['sunrise', 'sunset', 'rain', 'snowfall', 'thunderstorm', 'cloudy', 'cloudy & windy', 'night', 'wind'];
 var weather = 'sunrise';
 var tomorrowWeather = 'rain';
+var cityList = [];
 var backgroundVideo = document.getElementById('bg_src');
 var icon = document.getElementsByClassName('icon');
 console.log(icon[0])
@@ -50,13 +51,16 @@ if (tomorrowWeather == 'sunrise') {
     icon[1].src = 'img/wind.svg';
 }
 
-//console.log(x);
-//var listEl = document.createElement('Li');
-//listEl.appendChild(document.createTextNode())
-//document.getElementById("pasekMiast").appendChild(listEl)
-//console.log(listEl)
-
-
+$.ajax({
+    dataType: "json",
+    url: "city.list.json",
+    mimeType: "application/json",
+    success: function (result) {
+        $.each(result, function (i, obj) {
+            cityList[i] = obj.name
+        });
+    }
+});
 
 function filtrowanie() {
     var input, filter, ul, li, i, txtValue;
@@ -73,3 +77,5 @@ function filtrowanie() {
         }
     }
 }
+
+
