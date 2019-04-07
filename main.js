@@ -50,6 +50,7 @@ if (tomorrowWeather == 'sunrise') {
     icon[1].src = 'img/wind.svg';
 }
 
+console.log('mem')
 
 //console.log(x);
 //var listEl = document.createElement('Li');
