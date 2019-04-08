@@ -9,6 +9,10 @@ body {
     sans-serif;
 }
 
+ul{
+    list-style: none;
+}
+
 .el {
     background: rgba(10, 10, 10, 0.55);
     color: whitesmoke;
@@ -21,43 +25,64 @@ div {
      text-align: start;
      justify-content: center;
 }
-div h3{
-   
-    color: rgb(167, 173, 199);
-}
+
 #pogoda {
-    height: 60vh;
+    margin-top: 7vh;
+    height: 70vh;
+    border-bottom-left-radius: 3%;
+    border-top-left-radius: 3%;
 }
 
 #prognoza {
-    height: 60vh;
+    margin-top: 7vh;
+    height: 70vh;
+    border-radius: 3%;
+}
+
+#spotify {
+    margin-top: 7vh;
+    border-bottom-right-radius: 3%;
+    border-top-right-radius: 3%;
 }
 
 #navBar {
-    height: 8vh;
+    
 }
 
-#bottomEl {
-    /* margin-top: 25px; */
-    height: 20vh;
+#wyszukiwarka {
+    width: 100%;
+    background: none;
+    border: none;
+    color: whitesmoke;
 }
 
-#pasekMiast li{
-    background-color: blue;
-    display: none;
+::placeholder {
+    color: whitesmoke;
+    opacity: 0.8;
 }
 
-/* .fullscreen-bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
-    min-height: 100vh;
-    min-width: 100vh;
-} */
+#pasekMiast{
+    background-color: rgba(10, 10, 10, 0.55);
+    color: whitesmoke;
+    border-radius: 2%;
+}
+
+.temp {
+    font-size: 70px;
+    padding: 3% 0 ;
+}
+
+.title{
+    padding: 6% 0 3% 0; 
+}
+
+.descr {
+    font-size: 30px;
+}
+
+.danePogodowe{
+    padding: 7% 0 3% 0;
+}
 
 .fullscreen-bg__video {
     position: absolute;

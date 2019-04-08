@@ -5,56 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <meta http-equiv="refresh" content='2' /> -->
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Arimo|Josefin+Sans:300" rel="stylesheet">
-    
 </head>
 
 <body>
     <div class="container-fluid">
         <video loop muted autoplay src='' class="fullscreen-bg__video" id="bg_src"></video>
         <div class="row  el" id="navBar justify-content-md-center">
-            <div class="col-sm-9" id="szukaj">
-                <span>Wybierz Miasto: </span>
-                <input type="text" id="wyszukiwarka" onkeyup="filtrowanie()" placeholder="Miasto">
-                <ul id="pasekMiast">
-                    <li>a</li>
-                </ul>
+            <div class="col-sm-5 offset-sm-1" id="szukaj">
+                <input type="text" id="wyszukiwarka" onkeyup="filtrowanie()" placeholder="Wpisz wybraną lokalizację">
             </div>
-            <div class="col-sm-3" id="cieplej">
+            <div class="col-sm-3 offset-sm-3" id="cieplej">
                 Gdzie jest cieplej ?
             </div>
+        </div>
+        <div id="pasekMiast">
         </div>
         <div class="row justify-content-md-center">
             <div id="pogoda" class="col-sm-4 el" >
                 
-                <div class="row"><h3>W tym momencie:</h3></div>
+                <div class="row"><h3 class='title'>Pogoda teraz</h3></div>
                 <div class="row"><img class="icon" src="" width=130px></div>
-                <div class="row"><h3>descr:</h3> "Clouds, overcast clouds"</div>
-                <div class="row"><h3>humidity:</h3> "67%"</div>
-                <div class="row"><h3>pressure:</h3> "1020.44hPa</div>
-                <div class="row"><h3>temperature:</h3>12.82</div>
-                <div class="row"><h3>windSpeed:</h3>"2.27km/h"</div>
+                <div class="row"><h1 class="temp">12.82 &deg;C</h1></div>
+                <div class="row"><h4 class="descr"> Sunrise, sunny</h4></div>
+                <div class="row danePogodowe">
+                    <div class="col-md-3"><h4>humidity:<br>67%</h4></div>
+                    <div class="col-md-4"><h4>pressure:<br>1020.44&nbsp;hPa</div>
+                    <div class="col-md-3"><h4>windSpeed:<br>2.27&nbsp;km/h</h4></div>
+                </div>
             </div>
-            <div id="prognoza" class="col-sm-4 offset-sm-2 el">
+            <div id="spotify" class="col-sm-2 el">
+                <div class="row">
+                    <h3 class="title">Song</h3>
+                </div>
+            </div>
+            <div id="prognoza" class="col-sm-4 offset-sm-1 el">
                 
-                <div class="row"><h3>Jutro:</h3> </div>
+                <div class="row"><h3 class='title'>Prognoza na jutro</h3> </div>
                 <div class="row"><img class="icon"  src="" width=130px></div>
-                <div class="row"><h3>descr:</h3> "Clouds, overcast clouds"</div>
-                <div class="row"><h3>humidity:</h3> "67%"</div>
-                <div class="row"><h3>pressure:</h3> "1020.44hPa</div>
-                <div class="row"><h3>temperature:</h3>12.82</div>
-                <div class="row"><h3>windSpeed:</h3>"2.27km/h"</div>
+                <div class="row"><h1 class="temp">12.82 &deg;C </h1></div>
+                <div class="row"><h4 class="descr"> Rainy </h4></div>
+                <div class="row danePogodowe">
+                    <div class="col-md-3"><h4>humidity:<br>67%</h4></div>
+                    <div class="col-md-4"><h4>pressure:<br>1020.44&nbsp;hPa</div>
+                    <div class="col-md-3"><h4>windSpeed:<br>2.27&nbsp;km/h</h4></div>
+                </div>
             </div>
-        </div>
-        <div id="bottomEl" class="row el">
-            <div id="spotify" class="col-sm-12">
-                Piosenka na pogode 
-            </div>
-        </div>       
+        </div>     
     </div>
 
 
